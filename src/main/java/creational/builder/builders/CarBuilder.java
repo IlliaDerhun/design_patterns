@@ -73,9 +73,12 @@ public class CarBuilder implements Builder {
             return false;
         }
         CarBuilder builder = (CarBuilder) o;
-        return seats == builder.seats && type == builder.type && Objects.equals(engine, builder.engine) && Objects
-            .equals(transmission, builder.transmission) && Objects.equals(tripComputer, builder.tripComputer) && Objects
-                   .equals(gpsNavigator, builder.gpsNavigator);
+        return seats == builder.seats &&
+                type == builder.type &&
+                Objects.equals(engine, builder.engine) &&
+                Objects.equals(transmission, builder.transmission) &&
+                Objects.equals(tripComputer, builder.tripComputer) &&
+                Objects.equals(gpsNavigator, builder.gpsNavigator);
     }
 
     @Override
